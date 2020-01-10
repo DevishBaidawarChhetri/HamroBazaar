@@ -10,10 +10,11 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.deepak.hamrobazzar.R;
-import com.deepak.hamrobazzar.model.Products;
 
 import java.util.List;
+
+import np.com.devish.hamrobazaarreplica.R;
+import np.com.devish.hamrobazaarreplica.model.Products;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolders>{
 

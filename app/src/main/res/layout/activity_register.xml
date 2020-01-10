@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/profile_icon"
+
+            />
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Email address:" />
+
+        <EditText
+            android:id="@+id/etReEmail"
+            style="@style/editTextRegister"
+            android:drawableEnd="@drawable/important"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Full Name:" />
+
+        <EditText
+            android:id="@+id/etReFullName"
+            style="@style/editTextRegister"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:drawableEnd="@drawable/important"
+            android:inputType="text" />
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Password (between 6 and 20 chars):" />
+
+        <EditText
+            android:id="@+id/etRePassword"
+            style="@style/editTextRegister"
+            android:drawableEnd="@drawable/important"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Confirm Password:" />
+
+        <EditText
+            android:id="@+id/etReConPassword"
+            style="@style/editTextRegister"
+            android:drawableEnd="@drawable/important"
+            android:inputType="textPassword"
+            android:maxLength="20" />
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Phone:" />
+
+        <EditText
+            android:id="@+id/etRePhone"
+            style="@style/editTextRegister"
+            android:inputType="number"
+            android:maxLength="10" />
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Mobile Phone:" />
+
+        <EditText
+            android:id="@+id/etReMobPhone"
+            style="@style/editTextRegister"
+            android:drawableEnd="@drawable/important"
+            android:inputType="number" />
+
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Address 1 (Street Name):" />
+
+        <EditText
+            android:id="@+id/etReAddressOne"
+            style="@style/editTextRegister" />
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Address 2 (Area Location):" />
+
+        <EditText
+            android:id="@+id/etReAddressTwo"
+            style="@style/editTextRegister"
+            android:drawableEnd="@drawable/important" />
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Address 3 (City Name):" />
+
+        <Spinner
+            android:id="@+id/spinCityThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+
+
+        <TextView
+            style="@style/textviewRegister"
+            android:text="Subscribe / Hide Phone:" />
+
+        <CheckBox
+            android:id="@+id/chkSubscribe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I do not want to subscribe to site newsletter."
+            android:textColor="#000" />
+
+        <CheckBox
+            android:id="@+id/chkPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hide my phone number (only contact me through email)"
+            android:textColor="#000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbTermsOfUse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="I have read and agree to "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvRegisterTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#00f"
+                android:textStyle="bold"
+                android:text="terms of use."
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegisterFinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="#536DFE"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
