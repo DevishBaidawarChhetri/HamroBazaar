@@ -40,7 +40,7 @@
         <EditText
             android:id="@+id/etReFullName"
             style="@style/editTextRegister"
-            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
             android:drawableEnd="@drawable/important"
             android:inputType="text" />
 

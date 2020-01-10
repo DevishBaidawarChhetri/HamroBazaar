@@ -59,7 +59,7 @@ public class Register extends AppCompatActivity {
         etReFullName = findViewById(R.id.etReFullName);
         etRePassword = findViewById(R.id.etRePassword);
         etReConPassword = findViewById(R.id.etReConPassword);
-        etRePhone = findViewById(R.id.etReMobPhone);
+        etRePhone = findViewById(R.id.etRePhone);
         etReMobPhone = findViewById(R.id.etReMobPhone);
         etReAddressOne = findViewById(R.id.etReAddressOne);
         etReAddressTwo = findViewById(R.id.etReAddressTwo);
@@ -194,6 +194,8 @@ public class Register extends AppCompatActivity {
                     Toast.makeText(Register.this, "Code " + response.code(), Toast.LENGTH_SHORT).show();
                     return;
                 }
+
+                Intent intent = new Intent(Register.this, Login.class);
                 Toast.makeText(Register.this, "Registered", Toast.LENGTH_SHORT).show();
             }
 
