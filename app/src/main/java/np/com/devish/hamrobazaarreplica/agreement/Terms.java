@@ -6,7 +6,8 @@ import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.deepak.hamrobazzar.R;
+import np.com.devish.hamrobazaarreplica.R;
+
 
 public class Terms extends AppCompatActivity {
 
