@@ -114,7 +114,7 @@ public class Register extends AppCompatActivity {
     private boolean validate() {
         boolean status=true;
         if (etReFullName.getText().toString().length() < 6) {
-            etReFullName.setError("Minimum 20 character");
+            etReFullName.setError("Minimum 6 character required");
             status=false;
         }
         return status;
