@@ -17,7 +17,11 @@ import android.widget.Toolbar;
 import java.util.ArrayList;
 import java.util.List;
 
+import np.com.devish.hamrobazaarreplica.adapters.CategoryAdapter;
 import np.com.devish.hamrobazaarreplica.adapters.ImageSliderAdapter;
+import np.com.devish.hamrobazaarreplica.adapters.ProductAdapter;
+import np.com.devish.hamrobazaarreplica.model.Category;
+import np.com.devish.hamrobazaarreplica.model.Products;
 
 public class MainActivity extends AppCompatActivity {
 

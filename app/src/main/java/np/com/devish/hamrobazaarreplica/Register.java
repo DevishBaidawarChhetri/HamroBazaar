@@ -22,7 +22,12 @@ import java.io.File;
 import java.io.IOException;
 
 import np.com.devish.hamrobazaarreplica.agreement.Terms;
+import np.com.devish.hamrobazaarreplica.api.UsersAPI;
+import np.com.devish.hamrobazaarreplica.model.User;
+import np.com.devish.hamrobazaarreplica.serverresponse.ImageResponse;
+import np.com.devish.hamrobazaarreplica.serverresponse.SignUpResponse;
 import np.com.devish.hamrobazaarreplica.strictmode.StrictModeClass;
+import np.com.devish.hamrobazaarreplica.url.Url;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
 import okhttp3.RequestBody;

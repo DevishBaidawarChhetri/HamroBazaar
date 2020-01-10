@@ -9,6 +9,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import np.com.devish.hamrobazaarreplica.bll.LoginBLL;
+import np.com.devish.hamrobazaarreplica.strictmode.StrictModeClass;
+
 public class Login extends AppCompatActivity {
     private Button btnLogin,btnRegister;
 
