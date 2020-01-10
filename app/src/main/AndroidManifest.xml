@@ -17,19 +17,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Agreement"></activity>
-        <activity android:name=".SplashActivity">
+        <activity android:name=".agreement.Terms"></activity>
+        <activity android:name=".agreement.Safety" />
+        <activity android:name=".agreement.AdPostingRule" />
+        <activity android:name=".Agreement">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SplashActivity" />
         <activity android:name=".Register" />
         <activity android:name=".Login" />
-        <activity android:name=".MainActivity">
-
-        </activity>
+        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>
