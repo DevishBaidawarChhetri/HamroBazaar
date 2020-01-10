@@ -11,10 +11,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.squareup.picasso.Picasso;
+
 import java.util.List;
 
 import np.com.devish.hamrobazaarreplica.R;
 import np.com.devish.hamrobazaarreplica.model.Products;
+import np.com.devish.hamrobazaarreplica.url.Url;
 
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolders>{
 
@@ -42,7 +45,9 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.tvPrice.setText(products.getProductPrice());
         holder.tvUserOrNot.setText(products.getProductUseOrNot());
 
-        holder.imgProduct.setImageResource(products.getProductImage());
+        String image = products.getProductImage();
+        String imgPath = Url.imageProductPath+image;
+        Picasso.get().load(imgPath).into(holder.imgProduct);
     }
 
     @Override
@@ -63,8 +68,6 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
             tvUserOrNot = itemView.findViewById(R.id.tvUserOrNot);
 
             imgProduct = itemView.findViewById(R.id.imgProduct);
-
-
 
         }
     }

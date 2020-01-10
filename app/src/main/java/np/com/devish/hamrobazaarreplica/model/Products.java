@@ -3,12 +3,13 @@ package np.com.devish.hamrobazaarreplica.model;
 public class Products {
     private int id;
     private String productName;
-    private int productImage;
+    private String productImage;
     private String productPrice;
     private String productUseOrNot;
 
 
-    public Products(String productName, int productImage, String productPrice, String productUseOrNot) {
+    public Products(int id, String productName, String productImage, String productPrice, String productUseOrNot) {
+        this.id = id;
         this.productName = productName;
         this.productImage = productImage;
         this.productPrice = productPrice;
@@ -31,11 +32,11 @@ public class Products {
         this.productName = productName;
     }
 
-    public int getProductImage() {
+    public String getProductImage() {
         return productImage;
     }
 
-    public void setProductImage(int productImage) {
+    public void setProductImage(String productImage) {
         this.productImage = productImage;
     }
 
